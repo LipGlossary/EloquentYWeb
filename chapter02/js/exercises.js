@@ -13,7 +13,10 @@ Exer.expressions1 = function () {
 // Statements 1
 Exer.statements1 = function () {
 
-  5 == true;
+  // 5 == true;  // pre-JSHint
+  // 5 === true;  // pre-JSHint
+  // var yo = true; // pre-JSHint (fails test)
+  Math.min( 1, 2 );
 
 };
 /* jshint ignore:end */
@@ -117,15 +120,13 @@ Exer.variables7 = function ( change ) {
 // Keywords 1
 // Uncomment the following function by removing the slash-asterisk pairs.
 // Fix the function so no keywords or reserved words are improperly used.
-/*
-Exer.keywords1 = function ( true, two ) {
-  var new = 2;
-  var const = two+2;
-  true += "2";
-  var function = new + const + true + two;
-  return function;
+Exer.keywords1 = function ( tue, two ) {
+  var newt = 2;
+  var cronst = two+2;
+  tue += "2";
+  var func = newt + cronst + tue + two;
+  return func;
 };
-*/
 
 /*--------------------------    THE ENVIRONMENT    ---------------------------*/
 
@@ -194,8 +195,10 @@ Exer.console4 = function () {
 Exer.console5 = function ( x, y ) {
 
   // Output the first parameter `x` to the console.
+  console.log(x);
 
   // Make the function return the parameter `y` plus 1.
+  return y + 1;
 
 };
 
