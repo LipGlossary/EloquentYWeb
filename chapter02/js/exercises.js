@@ -5,14 +5,14 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-  return /* your answer here */ ;
+  return ( 1 + 2 ) * 3 ;
 
 };
 
 // Statements 1
 Exer.statements1 = function () {
 
-  // Write a statement that is not undefined.
+  5 == true;
 
 };
 
@@ -22,8 +22,10 @@ Exer.statements1 = function () {
 Exer.variables1 = function () {
 
   // Write a statement that declares a variable.
+  var foo;
 
   // Return that variable.
+  return foo;
 
 };
 
@@ -31,10 +33,13 @@ Exer.variables1 = function () {
 Exer.variables2 = function () {
 
   // Write a statement that declares a variable.
+  var foo;
 
   // Write a statement to assign a number value to your variable.
+  foo = 3;
 
   // Return the variable.
+  return foo;
 
 };
 
@@ -42,8 +47,10 @@ Exer.variables2 = function () {
 Exer.variables3 = function () {
 
   // Write a statement that declares a variable and initializes it to a string.
+  var foo = "bar";
 
   // Return the variable.
+  return foo;
 
 };
 
@@ -51,6 +58,7 @@ Exer.variables3 = function () {
 Exer.variables4 = function ( n ) {
 
   // Return the parameter.
+  return n;
 
 };
 
@@ -58,8 +66,10 @@ Exer.variables4 = function ( n ) {
 Exer.variables5 = function ( n ) {
 
   // Declare a new variable and initialize it to the value of `n`.
+  var foo = n;
 
   // Return the new variable.
+  return foo;
 
 };
 
@@ -68,11 +78,14 @@ Exer.variables6 = function ( stacys ) {
 
   // You have 3 apples
   // (declare a variable named `apples` and initialize it to `3`)
+  var apples = 3;
 
   // Stacy gives you more apples
   // (the parameter `stacys`)
+  apples += stacys;
 
   // Return the total number of apples you have.
+  return apples;
 
 };
 
@@ -81,14 +94,18 @@ Exer.variables6 = function ( stacys ) {
 Exer.variables7 = function ( change ) {
 
   // You find a quarter.
+  change += 0.25;
 
   // Then you spend a dime on old fashioned candy.
   // How much money do you have now?
+  change -= 0.1;
 
   // Use type coercion to turn your pocket change into a string add a dollar
   // sign to the beginning.
+  change = "$" + change;
 
   // Return that string.
+  return change;
 
 };
 
