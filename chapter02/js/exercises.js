@@ -52,7 +52,7 @@ Exer.variables2 = function () {
 Exer.variables3 = function () {
 
   // Write a statement that declares a variable and initializes it to a string.
-  var foo = "23";
+  var foo = "bar";
 
   // Return the variable.
   return foo;
