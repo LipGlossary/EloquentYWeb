@@ -13,11 +13,7 @@ Exer.expressions1 = function () {
 // Statements 1
 Exer.statements1 = function () {
 
-  5 + 5;
-  // 5 == true;  // pre-JSHint
-  // 5 === true;  // pre-JSHint
-  // var yo = true; // pre-JSHint (fails test)
-  // Math.min( 1, 2 );
+  5 == true;
 
 };
 /* jshint ignore:end */
@@ -53,7 +49,7 @@ Exer.variables2 = function () {
 Exer.variables3 = function () {
 
   // Write a statement that declares a variable and initializes it to a string.
-  var foo = "23";
+  var foo = "bar";
 
   // Return the variable.
   return foo;
