@@ -576,6 +576,72 @@ describe("Prompt and Confirm exercises", function () {
       expect( result ).toEqual( true );
     });
   });
+
+  describe( "Return 4", function () {
+
+    beforeAll( function () {
+      spyOn( window, 'magicFunc' ).and.callThrough();
+      spyOn( console, 'log' ).and.callThrough();
+      Exer.return4();
+    } );
+
+    it( "should call magicFunc twice", function () {
+      expect( magicFunc.calls.count() ).toEqual(2);
+    } );
+
+    it( "should call console.log once", function () {
+      expect( console.log.calls.count() ).toEqual(1);
+    } );
+
+    it( "should log something that looks sane", function () {
+      expect( console.log.calls.argsFor(0)[0].match(/^\d{1,2}\.?\d{1,3}\.?\d?$/) ).not.toBeNull();
+    } );
+
+  } );
+
+  describe( "Return 5", function () {
+
+    var foo;
+
+    beforeAll( function () {
+      spyOn( window, 'strShift' ).and.callThrough();
+      spyOn( window, 'strShuffle' ).and.callThrough();
+      foo = Exer.return5();
+    } );
+
+    it( "should call strShift three times total", function () {
+      expect( strShift.calls.count() ).toEqual(3);
+    } );
+
+    it( "should call strShuffle once", function () {
+      expect( strShuffle.calls.count() ).toEqual(1);
+    } );
+
+    it( "should return the correct result", function () {
+      expect( foo ).toEqual("bcc dUB CfD 1H2 3l! @M# n");
+    } );
+
+    it( "should contain three statements", function () {
+      var work = Exer.return5.toString();
+      work = work.match(/^.+?$/mg);  // break into lines
+      var i = 0;
+      while ( i < work.length ) {
+        if ( work[i].match(/^\s*\/\//) ) {  // remove comments
+          work.splice( i, 1 );
+        } else { i++; }
+      }
+      i = 0;
+      while ( i < work.length ) {
+        if ( work[i].match(/^.+;(?:\s*\/\/.*)?$/) === null ) {  // remove non-statements
+          work.splice( i, 1 );
+        } else { i++; }
+      }
+      console.log(work);
+      expect( work.length ).toEqual(3);
+    } );
+
+  } );
+
 });
 
 describe("Control Flow exercises", function() {
