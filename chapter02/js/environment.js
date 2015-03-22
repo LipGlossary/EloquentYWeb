@@ -9,6 +9,8 @@ Triangle = {};
 Fizz = {};
 Chess = {};
 
+if ( !window ) { window = {}; }
+
 // returns a numerical value
 window.magicFunc = function () {
   var output = Math.floor( Math.random() * 9 + 1 ) * 10;
