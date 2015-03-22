@@ -12,10 +12,11 @@ Exer.expressions1 = function () {
 // Statements 1
 Exer.statements1 = function () {
 
+  5 + 5;
   // 5 == true;  // pre-JSHint
   // 5 === true;  // pre-JSHint
   // var yo = true; // pre-JSHint (fails test)
-  Math.min( 1, 2 );
+  // Math.min( 1, 2 );
 
 };
 
@@ -50,7 +51,7 @@ Exer.variables2 = function () {
 Exer.variables3 = function () {
 
   // Write a statement that declares a variable and initializes it to a string.
-  var foo = "bar";
+  var foo = "23";
 
   // Return the variable.
   return foo;
@@ -159,6 +160,7 @@ Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 Exer.console1 = function () {
 
   // Output something to the console.
+  console.log("Hello, world!");
 
 };
 
@@ -166,6 +168,7 @@ Exer.console1 = function () {
 Exer.console2 = function ( printme ) {
 
   // Print the parameter `printme` to the console.
+  console.log( printme );
 
 };
 
@@ -177,6 +180,7 @@ Exer.console2 = function ( printme ) {
 Exer.console3 = function ( data ) {
 
   // your answer here
+  console.log( 'The magic word is "' + data + '"' );
 
 };
 
@@ -185,6 +189,7 @@ Exer.console4 = function () {
 
   // Use comma-separated values to output two things to the console with one
   // call.
+  console.log("this", "that");
 
 };
 
