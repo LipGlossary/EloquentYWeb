@@ -9,14 +9,6 @@ Triangle = {};
 Fizz = {};
 Chess = {};
 
-// Mock window if is does not exist
-if ( weAreInNode() ) {
-  window = this;
-  navigator = {};
-  document = {};
-  history = {};
-}
-
 // returns a numerical value
 window.magicFunc = function () {
   var output = Math.floor( Math.random() * 9 + 1 ) * 10;
