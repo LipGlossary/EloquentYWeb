@@ -644,6 +644,7 @@ describe("Prompt and Confirm exercises", function () {
           work.splice( i, 1 );
         } else { i++; }
       }
+      console.log(work);
       expect( work.length ).toEqual(3);
     } );
 
