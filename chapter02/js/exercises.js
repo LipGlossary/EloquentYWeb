@@ -211,7 +211,7 @@ Exer.console5 = function ( x, y ) {
 // Call and log out the result of `magicFunc`.
 Exer.return1 = function () {
 
-  // your work goes here
+  console.log( magicFunc() );
 
 };
 
@@ -219,7 +219,7 @@ Exer.return1 = function () {
 // Call and return the result of `magicFunc`.
 Exer.return2 = function () {
 
-  // your work goes here
+  return magicFunc();
 
 };
 
@@ -227,8 +227,11 @@ Exer.return2 = function () {
 Exer.return3 = function () {
 
   // Call `strShift` with the argument "abczABCZ". Log the result.
+  var answer = strShift("abczABCZ");
+  console.log( answer );
 
   // Return that same result with "123" concatenated to the end.
+  return answer + "123";
 
 };
 
@@ -237,7 +240,7 @@ Exer.return3 = function () {
 // `magicFunc`.
 Exer.return4 = function () {
 
-  // your work goes here
+  console.log( magicFunc() + "" + magicFunc() );
 
 };
 
@@ -250,10 +253,13 @@ Exer.return4 = function () {
 Exer.return5 = function () {
 
   // Declare and initialize a variable for the first string.
+  var str1 = strShift( "abcABC123!@#" );
 
   // Declare and initialize a variable for the second string.
+  var str2 = strShift( "a S d F j K l" );
 
   // A return statement.
+  return strShuffle( str1, strShift(str2) );
 
 };
 
