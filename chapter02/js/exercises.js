@@ -289,8 +289,10 @@ Exer.confirm1 = function () {
 Exer.control1 = function () {
 
   // Use prompt to get a number from a user
+  var num = prompt( "Please input a number." );
 
   // Print that number to the console
+  console.log( num );
 
 };
 
@@ -298,19 +300,25 @@ Exer.control1 = function () {
 Exer.control2 = function ( bar ) {
 
   // Declare a variable named `foo`.
+  var foo;
 
   // Initialize `foo` with a string.
+  foo = "a string";
 
   // Log `foo` to the console.
+  console.log( foo );
 
   // Concatenate the parameter `bar` to be beginning and end of `foo`
   // Save the result in a new variable called `ding`.
+  var ding = bar + foo + bar;
 
   // Call `strReverse` and pass it `ding` (as an argument).
   // Send the result to the user in a confirm window.
   // Save the user's response in a new variable called `quux`.
+  var quux = confirm( strReverse( ding ) );
 
   // Return the opposite of `quux`.
+  return !quux;
 
 };
 
