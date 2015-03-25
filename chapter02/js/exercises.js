@@ -138,7 +138,7 @@ Exer.environment1 = function () {
   // return window;
   // return document;
   // return history;
-  // return browser;
+   return browser;
   // return navigator;
 
 };
