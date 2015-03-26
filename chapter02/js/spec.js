@@ -429,7 +429,6 @@ describe("Return Values exercises", function () {
       console.log( "Return 1:" );
       spyOn( window, 'magicFunc' ).and.callThrough();
       spyOn( console, 'log' ).and.callThrough();
-      console.log( "Return 1:" );
       Exer.return1();
     });
 
@@ -475,7 +474,6 @@ describe("Return Values exercises", function () {
       console.log( "Return 3:" );
       spyOn( window, 'strShift' ).and.callThrough();
       spyOn( console, 'log' ).and.callThrough();
-      console.log( "Return 3:" );
       foo = Exer.return3();
     });
 
@@ -507,7 +505,6 @@ describe("Return Values exercises", function () {
       console.log( "Return 4:" );
       spyOn( window, 'magicFunc' ).and.callThrough();
       spyOn( console, 'log' ).and.callThrough();
-      console.log( "Return 4:" );
       Exer.return4();
     } );
 
@@ -678,7 +675,6 @@ describe("Control Flow exercises", function() {
         spyOn( window, 'strReverse' ).and.callThrough();
         spyOn( window, 'confirm' );
         bar = "hello";
-        console.log( "Control 2:" );
         Exer.control2(bar);
         foo = console.log.calls.argsFor(0)[0];
       } );
