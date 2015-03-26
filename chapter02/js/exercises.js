@@ -13,11 +13,10 @@ Exer.expressions1 = function () {
 // Statements 1
 Exer.statements1 = function () {
 
-  5 + 5;
   // 5 == true;  // pre-JSHint
   // 5 === true;  // pre-JSHint
   // var yo = true; // pre-JSHint (fails test)
-  // Math.min( 1, 2 );
+  Math.min( 1, 2 );
 
 };
 /* jshint ignore:end */
