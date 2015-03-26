@@ -340,8 +340,6 @@ describe("The console.log Function exercises", function() {
       beforeEach(function () {
         console.log( "Console 3:" );
         spyOn(console, 'log').and.callThrough();
-        console.log( "Console 3:" );
-        spyOn(console, 'log').and.callThrough();
       });
 
       it("should print 'The magic word is \"Abracadabra!\"'", function () {
@@ -380,8 +378,6 @@ describe("The console.log Function exercises", function() {
     it("should provide two parameters", function () {
       console.log( "Console 4:" );
       spyOn(console, 'log').and.callThrough();
-      console.log( "Console 4:" );
-      spyOn(console, 'log').and.callThrough();
       Exer.console4();
       expect( console.log.calls.allArgs()[0].length ).toEqual(2);
     });
@@ -399,8 +395,6 @@ describe("The console.log Function exercises", function() {
       beforeAll(function() {
         this.test1 = "secret passphrase";
         this.test2 = -6;
-        console.log( "Console 5:" );
-        spyOn(console, 'log').and.callThrough();
         console.log( "Console 5:" );
         spyOn(console, 'log').and.callThrough();
       });
