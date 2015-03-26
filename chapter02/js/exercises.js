@@ -12,11 +12,10 @@ Exer.expressions1 = function () {
 // Statements 1
 Exer.statements1 = function () {
 
-  5 + 5;
   // 5 == true;  // pre-JSHint
   // 5 === true;  // pre-JSHint
   // var yo = true; // pre-JSHint (fails test)
-  // Math.min( 1, 2 );
+  Math.min( 1, 2 );
 
 };
 
@@ -149,7 +148,9 @@ Exer.environment1 = function () {
 // "lime".
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 
-  // Your work here
+  recombobulate();
+  setPowerLevel(9999);
+  cornTortilla( "chicken", "queso", "bacon", "lime" );
   
 };
 
@@ -269,7 +270,7 @@ Exer.return5 = function () {
 // Call prompt with the string and return the result.
 Exer.prompt1 = function () {
 
-  // Your work here
+  return prompt( 'What is the answer to the meaning of life, the universe, and everything?' );
 
 };
 
@@ -277,7 +278,7 @@ Exer.prompt1 = function () {
 // Call confirm with the string and return the result.
 Exer.confirm1 = function () {
 
-  // Your work here
+  return confirm( 'Imma let you finish, but Javascript is one of the best programming languages of all time...one of the best programming languages of all time!' );
 
 };
 
@@ -377,7 +378,7 @@ Exer.condition3 = function ( whatDay ) {
   }
   // If `whatDay` is "Foosday"...
   else if ( whatDay === "Foosday" ) {
-    luckyNumber += 2
+    luckyNumber += 2;
   }
   // If `whatDay` is "Heyday"...
   else if ( whatDay === "Heyday" ) {
@@ -538,7 +539,10 @@ Exer.for2 = function () {
 // "even" if the number is even and "odd" if the number is odd.
 Exer.for3 = function () {
 
-  // Your work here
+  for ( var i = 20; i >= 5; i-- ) {
+    if ( i % 2 === 0 ) { console.log( i, "even" ); }
+    else { console.log( i, "odd" ); }
+  }
 
 };
 
