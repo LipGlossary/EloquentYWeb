@@ -332,6 +332,9 @@ Exer.condition1 = function ( isSerious ) {
 
   // If `isSerious` is false, output the message:
   //     On second thoughts, let's not go to Camelot. It is a silly place.
+  if ( isSerious === false ) {
+    console.log( "On second thoughts, let's not go to Camelot. It is a silly place." );
+  }
 
 };
 
@@ -340,14 +343,21 @@ Exer.condition1 = function ( isSerious ) {
 Exer.condition2 = function ( temperature ) {
 
   // If temperature is greater than or equal to 70
-  // Then output:
-  //     Hermit crab warning!
+  if ( temperature >= 70 ) {
+    // Then output:
+    //     Hermit crab warning!
+    console.log( "Hermit crab warning!" );
+  }
 
   // Otherwise, output
   //     Catch of the day: influenza, $14/lb.
+  else {
+    console.log( "Catch of the day: influenza, $14/lb." );
+  }
 
   // In either case, also print
   //     Thanks for visiting Pier One and Three Quarters!
+  console.log( "Thanks for visiting Pier One and Three Quarters!" );
 
 };
 
@@ -356,15 +366,29 @@ Exer.condition2 = function ( temperature ) {
 Exer.condition3 = function ( whatDay ) {
 
   // Declare and initialize `luckyNumber`
+  var luckyNumber = 7;
 
   // If the length of `whatDay` is 6 or less...
+  if ( whatDay.length <= 6 ) {
+    luckyNumber += '!';
+  }
 
   // If `whatDay` is "Mannersday"...
+  if ( whatDay === "Mannersday" ) {
+    luckyNumber += 4;
+  }
   // If `whatDay` is "Foosday"...
+  else if ( whatDay === "Foosday" ) {
+    luckyNumber += 2
+  }
   // If `whatDay` is "Heyday"...
+  else if ( whatDay === "Heyday" ) {
+    luckyNumber += luckyNumber.charAt(0);
+  }
   // Otherwise...
 
   // Return `luckyNumber`
+  return luckyNumber;
 
 };
 
@@ -372,13 +396,31 @@ Exer.condition3 = function ( whatDay ) {
 Exer.condition4 = function () {
 
   // Prompt the user
+  var input = prompt( "Enter today's date, please." );
 
   // If the user's input is not a number...
+  if ( isNaN(input) ) {
+    console.log( "What do you think this is, bub? Wonderland?" );
+  }
   // Otherwise...
+  else {
     // If the user's input is less than 1...
+    if ( input < 1 ) {
+      console.log( "Negativelaaaaaaand~!" );
+    }
     // If the user's input is greater than 31...
+    else if ( input > 31 ) {
+      console.log( "Are they paying you overtime for this?" );
+    }
     // If the user's input between 29 and 31, inclusive...
+    else if ( input >= 29 && input <= 31 ) {
+      console.log( "I sure hope it isn't February." );
+    }
     // Otherwise...
+    else {
+      console.log( "Did you know? There are exactly " + input + " ways to make today awesome!" );
+    }
+  }
 
 };
 
@@ -387,28 +429,27 @@ Exer.condition4 = function () {
 // While 1
 // Turn the code in the function into a while loop.
 Exer.while1 = function () {
-  console.log("10 sheep");
-  console.log("9 sheep");
-  console.log("8 sheep");
-  console.log("7 sheep");
-  console.log("6 sheep");
-  console.log("5 sheep");
-  console.log("4 sheep");
-  console.log("3 sheep");
-  console.log("2 sheep");
-  console.log("1 sheep");
+
+  var sheep = 10;
+  while ( sheep > 0 ) {
+    console.log( sheep-- + " sheep" );
+  }
+
 };
 
 /* jshint ignore:start */
 // While 2
 // Recreate the code in the function without a loop
 Exer.while2 = function () {
-  var deadWitch = "I'm melting!";
-  while(deadWitch.length > 0) {
-    console.log(deadWitch);
-    deadWitch = deadWitch.substr(2);
-  }
+
+  console.log("I'm melting!");
+  console.log("m melting!");
+  console.log("melting!");
+  console.log("lting!");
+  console.log("ing!");
+  console.log("g!");
   console.log("What a world!");
+
 };
 /* jshint ignore:end */
 
@@ -416,22 +457,27 @@ Exer.while2 = function () {
 // Turn the code in the function into a single do while loop.
 // Hint: 0, 1, and 2 are remainders from dividing numbers by 3.
 Exer.doWhile1 = function () {
-  console.log(0);
-  console.log(1);
-  console.log(2);
-  console.log(0);
-  console.log(1);
-  console.log(2);
+
+  var i = 0;
+  do {
+    console.log( i++ % 3 );
+  } while ( i < 6 );
+
 };
 
 /* jshint ignore:start */
 // doWhile 2
 // Recreate the code in the function without a loop
 Exer.doWhile2 = function () {
-  var trainNum = 1;
-  do {
-    console.log("Train# " + trainNum + ": In flight!?");
-  } while (trainNum++ < 7);
+
+  console.log("Train# 1: In flight!?");
+  console.log("Train# 2: In flight!?");
+  console.log("Train# 3: In flight!?");
+  console.log("Train# 4: In flight!?");
+  console.log("Train# 5: In flight!?");
+  console.log("Train# 6: In flight!?");
+  console.log("Train# 7: In flight!?");
+
 };
 /* jshint ignore:end */
 
@@ -440,13 +486,25 @@ Exer.doWhile2 = function () {
 // Indenting 1
 // Correctly indent the following code block using TWO spaces for each block
 Exer.indenting1 = function() {
-var firstName = "Zachery"; var lastName = "Moneypenny"; if(firstName === "Zachery") { lastName = "Johnson"; }
+
+  var firstName = "Zachery";
+  var lastName = "Moneypenny";
+  if(firstName === "Zachery") {
+    lastName = "Johnson";
+  }
+
 };
 
 // Indenting 2
 // Correctly indent the following code block using FOUR spaces for each block
 Exer.indenting2 = function() {
-var firstName = "Penny"; var lastName = "Moneywhistle"; if(firstName === "Penny") { lastName = "Johnson"; }
+
+    var firstName = "Penny";
+    var lastName = "Moneywhistle";
+    if(firstName === "Penny") {
+        lastName = "Johnson";
+    }
+    
 };
 
 /*-----------------------------    FOR LOOPS    ------------------------------*/
