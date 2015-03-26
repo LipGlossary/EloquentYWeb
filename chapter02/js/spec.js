@@ -289,8 +289,6 @@ describe("The console.log Function exercises", function() {
       beforeEach(function() {
         console.log( "Console 2:" );
         spyOn(console, 'log').and.callThrough();
-        console.log( "Console 2:" );
-        spyOn(console, 'log').and.callThrough();
       });
 
       it("should print the parameter", function() {
