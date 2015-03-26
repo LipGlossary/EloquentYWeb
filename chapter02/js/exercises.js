@@ -510,13 +510,12 @@ Exer.indenting2 = function() {
 // Rewrite the loop as a linear sequence of statements.
 Exer.for1 = function () {
 
-  var scream;
-  for ( scream = "..." ; scream.length < 28; scream += "AA" ) {
-    console.log( scream );
-    scream = "    " + scream;
-  }
-  scream += "H!"
-  console.log( scream );
+  console.log( "..." );
+  console.log( "    ...AA" );
+  console.log( "        ...AAAA" );
+  console.log( "            ...AAAAAA" );
+  console.log( "                ...AAAAAAAA" );
+  console.log( "                    ...AAAAAAAAAAH!" );
 
 };
 
@@ -524,16 +523,13 @@ Exer.for1 = function () {
 // Rewrite the repetative code with for loops.
 Exer.for2 = function () {
 
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
+  for ( var i = 0; i < 2; i++ ) {
+    console.log( "Hi!" );
+    for ( var j = 0; j < 3; j++ ) {
+      console.log( "My name is" );
+    }
+    console.log( "Slim Shady" );
+  }
 
 };
 
