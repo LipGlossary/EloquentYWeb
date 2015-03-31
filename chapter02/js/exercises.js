@@ -638,6 +638,7 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
 
   if ( war ) {
     if ( missiles ) {
+      missiles.launch();
     } else {
       cower();
     }
