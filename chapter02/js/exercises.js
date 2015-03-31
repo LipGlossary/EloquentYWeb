@@ -580,15 +580,24 @@ Exer.breaking2 = function(theatre) {
 // Succinct 1
 Exer.succinct1 = function ( kiwis ) {
 
+<<<<<<< HEAD
   // Quadruple kiwis.
+=======
+  // Quintuple kiwis.
+  kiwis *= 4;
+>>>>>>> Solutions for succinct
 
   // Reduce kiwis by 2.
+  kiwis -= 2;
 
   // Halve kiwis.
+  kiwis /= 2;
 
   // Concatenate " handsomely hirsute kiwis" to kiwis.
+  kiwis += " handsomely hirsute kiwis";
 
   // Return kiwis.
+  return kiwis;
 
 };
 
@@ -596,7 +605,7 @@ Exer.succinct1 = function ( kiwis ) {
 // Edit the for loop to use the incrementation operator.
 Exer.succinct2 = function () {
 
-  for ( var hippo = 2; hippo <= 10; hippo += 1 ) {
+  for ( var hippo = 2; hippo <= 10; hippo++ ) {
     console.log( hippo + "! " + hippo + " fluttering hippos! Ah ah ah ah ah!" );
   }
 
@@ -609,7 +618,7 @@ Exer.succinct3 = function () {
   var message = "Reverse me!";
   var pointer = message.length;
   while( pointer > 0 ) {
-    console.log( message.charAt( pointer-- ) );
+    console.log( message.charAt( --pointer ) );
   }
 
 };
