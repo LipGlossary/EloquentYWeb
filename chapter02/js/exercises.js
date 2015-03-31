@@ -683,17 +683,18 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
 
   if ( war ) {
     if ( missiles ) {
-      missiles.launch();
+      // missiles.launch();
     } else {
       cower();
     }
+  // don't need any wheat--I've got an 8 on that
   } else {
     if ( wood ) {
       wood.trade( sheep, 1 );
     } else if ( sheep ) {
       sheep.trade( wood, 3 );
     } else {
-      brick.buy(2);
+      brick.buy(2);  // gerroff, bandits!
     }
   }
 
@@ -701,6 +702,21 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
 
 Exer.comments2 = function () {
 
-  // your work here
+  /*
+                         .       .
+                        / `.   .' \
+                .---.  <    > <    >  .---.
+                |    \  \ - ~ ~ - /  /    |
+                 ~-..-~             ~-..-~
+             \~~~\.'                    `./~~~/
+   .-~~^-.    \__/                        \__/
+ .'  O    \     /               /       \  \
+(_____,    `._.'               |         }  \/~~~/
+ `----.          /       }     |        /    \__/
+       `-.      |       /      |       /      `. ,~~|
+           ~-.__|      /_ - ~ ^|      /- _      `..-'   f: f:
+                |     /        |     /     ~-.     `-. _||_||_
+                |_____|        |_____|         ~ - . _ _ _ _ _>
+  */
 
 };
