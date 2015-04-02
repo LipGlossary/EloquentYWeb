@@ -656,17 +656,17 @@ Exer.switch1 = function ( animal ) {
 
 Exer.capitalization1 = function() {
   
-  /* JSHint ignore:start */
+  /* jshint ignore:start */
 
   var zero = 0;
   var happyCat = new String("How did this get here! I'm not good at computer!");
   for (var index = 0; i < happyCat.length; index++) {
-    if (index % 4 == zero) {
+    if (index % 4 === zero) {
       console.log(happyCat);
     }
   }
 
-  /* JSHint ignore:end */
+  /* jshint ignore:end */
 
 };
 
