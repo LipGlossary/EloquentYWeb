@@ -148,7 +148,9 @@ Exer.environment1 = function () {
 // "lime".
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 
-  // Your work here
+  recombobulate();
+  setPowerLevel( 9999 );
+  cornTortilla( "chicken", "queso", "bacon", "lime" );
 
 };
 
@@ -383,6 +385,9 @@ Exer.condition3 = function ( whatDay ) {
     luckyNumber += luckyNumber.charAt(0);
   }
   // Otherwise...
+  else {
+    luckyNumber = Infinity;
+  }
 
   // Return `luckyNumber`
   return luckyNumber;
@@ -548,7 +553,7 @@ Exer.for3 = function () {
 Exer.breaking1 = function(yeng) {
 
   while(yeng()) {
-
+    break;
   }
 
 };
@@ -560,6 +565,7 @@ Exer.breaking2 = function(theatre) {
 
   while (theatre.next()) {
     console.log(theatre.current());
+    if ( theatre.current() === "Electric Boogaloo!" ) { break; }
   }
 
 };
