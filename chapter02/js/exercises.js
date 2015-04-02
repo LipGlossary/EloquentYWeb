@@ -573,9 +573,7 @@ Exer.breaking2 = function(theatre) {
 
   while (theatre.next()) {
     console.log(theatre.current());
-    if (theatre.current() === "Electric Boogaloo!") {
-      break;
-    }
+    if ( theatre.current() === "Electric Boogaloo!" ) { break; }
   }
 
 };
@@ -585,12 +583,8 @@ Exer.breaking2 = function(theatre) {
 // Succinct 1
 Exer.succinct1 = function ( kiwis ) {
 
-<<<<<<< HEAD
-  // Quadruple kiwis.
-=======
   // Quintuple kiwis.
   kiwis *= 4;
->>>>>>> Solutions for succinct
 
   // Reduce kiwis by 2.
   kiwis -= 2;
