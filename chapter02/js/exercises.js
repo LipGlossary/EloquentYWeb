@@ -573,9 +573,7 @@ Exer.breaking2 = function(theatre) {
 
   while (theatre.next()) {
     console.log(theatre.current());
-    if (theatre.current() === "Electric Boogaloo!") {
-      break;
-    }
+    if ( theatre.current() === "Electric Boogaloo!" ) { break; }
   }
 
 };
@@ -585,7 +583,8 @@ Exer.breaking2 = function(theatre) {
 // Succinct 1
 Exer.succinct1 = function ( kiwis ) {
 
-  // Quadruple kiwis.
+  // Quintuple kiwis.
+  kiwis *= 4;
 
   // Reduce kiwis by 2.
   kiwis -= 2;
@@ -666,15 +665,13 @@ Exer.switch1 = function ( animal ) {
 /* jshint ignore:start */
 Exer.capitalization1 = function() {
 
-  var ZeRo = 0;
-  var HAPPYCAT = new string("How did this get here! I'm not good at computer!");
-  for (var Index = 0; I < HAPPYCAT.Length; Index++) {
-    if (Index % 4 == ZeRo) {
-      Console.Log(HAPPYCAT);
+  var zero = 0;
+  var happyCat = new String("How did this get here! I'm not good at computer!");
+  for (var index = 0; i < happyCat.length; index++) {
+    if (index % 4 === zero) {
+      console.log(happyCat);
     }
   }
-
-  /* jshint ignore:end */
 
 };
 /* jshint ignore:end */
