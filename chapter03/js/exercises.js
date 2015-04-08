@@ -13,7 +13,7 @@ Exer.defining = function () {  // do not remove or alter
 // Use a function expression to define a function named `three`.
 // That function should return the value 3.
 
-
+var three = function () { return 3; };
 
 /******************************    DEFINING 2    ******************************/
 // Use a function expression to define a function named `myLog`.
@@ -21,14 +21,20 @@ Exer.defining = function () {  // do not remove or alter
 // `myLog` should output `message` to the console with the appropriate
 //     formatting.
 
-
+var myLog = function ( message ) {
+  console.log( "The Log Says: " + message );
+};
 
 /******************************    DEFINING 3    ******************************/
 // Use a function expression to define a function named `square`.
 // `square` should accept one parameter named `number`.
 // The function should square the number and both log and return the result.
 
-
+var square = function ( number ) {
+  number *= number;
+  console.log( number );
+  return number;
+};
 
 //==========================//
   Exer.defining1 = three;   //
