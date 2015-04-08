@@ -55,6 +55,13 @@ var square = function ( number ) {
 
 Exer.parameters1 = function() {
 
+  var spaceCubeDetector = function ( length, width, height ) {
+    if ( length === width && width === height ) {
+      return "SPACE CUBE DETECTED!!";
+    } else { return "THIS IS NO SPACE CUBE!"; }
+  };
+
+  return spaceCubeDetector;
 
  };  // end Exer.parameters1
 
