@@ -673,8 +673,6 @@ Exer.capitalization1 = function() {
     }
   }
 
-  /* jshint ignore:end */
-
 };
 /* jshint ignore:end */
 
