@@ -65,8 +65,6 @@ Exer.parameters1 = function() {
 
  };  // end Exer.parameters1
 
-
-
 //================================================//
 Exer.parameters2 = function(spaceCubeDetector) {  //
 //================================================//
